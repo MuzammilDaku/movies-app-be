@@ -1,9 +1,9 @@
 var express = require('express')
 var router = express.Router()
-const Indian = require('../db/models/IndianModel')
-const Hollywood = require('../db/models/HollywoodModel')
-const Pakistani = require('../db/models/PakistaniModel')
-const SouthIndian = require('../db/models/SouthModel')
+const Indian = require('../db/models/movies/IndianModel')
+const Hollywood = require('../db/models/movies/HollywoodModel')
+const Pakistani = require('../db/models/movies/PakistaniModel')
+const SouthIndian = require('../db/models/movies/SouthModel')
 router.post('/indian-movies',async function (req,res){
     try{
         console.log(req.body)
